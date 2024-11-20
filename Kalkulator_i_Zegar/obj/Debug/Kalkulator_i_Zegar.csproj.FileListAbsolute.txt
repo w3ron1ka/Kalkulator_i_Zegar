@@ -1,0 +1,11 @@
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\bin\Debug\Kalkulator_i_Zegar.exe.config
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\bin\Debug\Kalkulator_i_Zegar.exe
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\bin\Debug\Kalkulator_i_Zegar.pdb
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\obj\Debug\Kalkulator_i_Zegar.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\obj\Debug\Kalkulator_i_Zegar.Form1.resources
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\obj\Debug\Kalkulator_i_Zegar.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\obj\Debug\Kalkulator_i_Zegar.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\obj\Debug\Kalkulator_i_Zegar.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\obj\Debug\Kalkulator_i_Zegar.exe
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\obj\Debug\Kalkulator_i_Zegar.pdb
+C:\Users\Lenovo\source\repos\Kalkulator_i_Zegar\Kalkulator_i_Zegar\bin\Debug\Resources\simsala.jpg
