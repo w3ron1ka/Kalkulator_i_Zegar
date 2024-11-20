@@ -220,6 +220,7 @@ namespace Kalkulator_i_Zegar
             return wynik;
         }
         //eleleoel
+        //komentarz kolejny a co
         private void rownaSie_Click(object sender, EventArgs e)
         {
             drugaLiczba = double.Parse(textBox1.Text);
