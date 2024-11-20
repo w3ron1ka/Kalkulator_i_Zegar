@@ -260,7 +260,7 @@ namespace Kalkulator_i_Zegar
             this.label2.Text = ":";
             dzialanie = ':';
         }
-
+        //helol to ja komentarz
         private void label2_Click(object sender, EventArgs e)
         {
 
