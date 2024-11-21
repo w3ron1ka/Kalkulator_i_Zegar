@@ -34,7 +34,8 @@
               "RelativeToolTip": "Kalkulator_i_Zegar\\Form1.Designer.cs",
               "ViewState": "AgIAAKgAAAAAAAAAAAAYwLsAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T15:17:00.089Z"
+              "WhenOpened": "2024-11-16T15:17:00.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -42,9 +43,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Kalkulator_i_Zegar\\Kalkulator_i_Zegar\\Form1.cs",
               "RelativeDocumentMoniker": "Kalkulator_i_Zegar\\Form1.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Kalkulator_i_Zegar\\Kalkulator_i_Zegar\\Form1.cs",
-              "RelativeToolTip": "Kalkulator_i_Zegar\\Form1.cs",
-              "ViewState": "AgIAAMwAAAAAAAAAAAD4v90AAAASAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Kalkulator_i_Zegar\\Kalkulator_i_Zegar\\Form1.cs*",
+              "RelativeToolTip": "Kalkulator_i_Zegar\\Form1.cs*",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAhwIQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T14:33:41.241Z",
               "EditorCaption": ""
@@ -55,10 +56,11 @@
               "Title": "Form1.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\Kalkulator_i_Zegar\\Kalkulator_i_Zegar\\Form1.cs",
               "RelativeDocumentMoniker": "Kalkulator_i_Zegar\\Form1.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Kalkulator_i_Zegar\\Kalkulator_i_Zegar\\Form1.cs [Projekt]",
-              "RelativeToolTip": "Kalkulator_i_Zegar\\Form1.cs [Projekt]",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\Kalkulator_i_Zegar\\Kalkulator_i_Zegar\\Form1.cs [Projekt]*",
+              "RelativeToolTip": "Kalkulator_i_Zegar\\Form1.cs [Projekt]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:03:45.56Z"
+              "WhenOpened": "2024-11-19T14:03:45.56Z",
+              "EditorCaption": " [Projekt]"
             }
           ]
         }

@@ -251,6 +251,7 @@
             this.czyszczenieWszystko.TabIndex = 16;
             this.czyszczenieWszystko.Text = "C";
             this.czyszczenieWszystko.UseVisualStyleBackColor = true;
+            this.czyszczenieWszystko.Click += new System.EventHandler(this.czyszczenieWszystko_Click);
             // 
             // toolStrip2
             // 
@@ -259,7 +260,7 @@
             this.toolStripDropDownButton1});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(824, 31);
+            this.toolStrip2.Size = new System.Drawing.Size(824, 27);
             this.toolStrip2.TabIndex = 18;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -271,7 +272,7 @@
             this.toolStripDropDownButton1.Image = global::Kalkulator_i_Zegar.Properties.Resources.doge;
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(66, 28);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(66, 24);
             this.toolStripDropDownButton1.Text = "Plik";
             // 
             // wczytajTłoDomyślneToolStripMenuItem

@@ -125,6 +125,12 @@ namespace Kalkulator_i_Zegar
                 case ',' :
                     this.przecinek.PerformClick();
                     break;
+                case 'c':
+                    this.czyszczenieWszystko.PerformClick();
+                    break;
+                case 'C':
+                    this.czyszczenieWszystko.PerformClick();
+                    break;
             }
         }
 
@@ -265,6 +271,11 @@ namespace Kalkulator_i_Zegar
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void czyszczenieWszystko_Click(object sender, EventArgs e)
+        {
+            this.textBox1.Text = "";
         }
     }
 }
