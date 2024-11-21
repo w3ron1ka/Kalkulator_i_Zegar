@@ -32,6 +32,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.jeden = new System.Windows.Forms.Button();
             this.dwa = new System.Windows.Forms.Button();
             this.trzy = new System.Windows.Forms.Button();
@@ -60,6 +61,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.zegar = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -260,7 +263,7 @@
             this.toolStripDropDownButton1});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(824, 27);
+            this.toolStrip2.Size = new System.Drawing.Size(871, 27);
             this.toolStrip2.TabIndex = 18;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -351,11 +354,27 @@
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // zegar
+            // 
+            this.zegar.AutoSize = true;
+            this.zegar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.zegar.Location = new System.Drawing.Point(137, 478);
+            this.zegar.Name = "zegar";
+            this.zegar.Size = new System.Drawing.Size(103, 46);
+            this.zegar.TabIndex = 23;
+            this.zegar.Text = "czas";
+            this.zegar.Click += new System.EventHandler(this.zegar_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 482);
+            this.ClientSize = new System.Drawing.Size(871, 564);
+            this.Controls.Add(this.zegar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -419,6 +438,8 @@
         private System.Windows.Forms.ToolStripMenuItem twojeTłoToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label zegar;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
