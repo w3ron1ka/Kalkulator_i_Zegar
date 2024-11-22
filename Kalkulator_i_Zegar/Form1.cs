@@ -219,7 +219,7 @@ namespace Kalkulator_i_Zegar
 
             return wynik;
         }
-
+        // ula tu byla
         private void rownaSie_Click(object sender, EventArgs e)
         {
             drugaLiczba = double.Parse(textBox1.Text);
