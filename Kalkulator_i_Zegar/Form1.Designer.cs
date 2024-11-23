@@ -69,13 +69,15 @@
             this.BlackButton = new System.Windows.Forms.Button();
             this.GreenButton = new System.Windows.Forms.Button();
             this.BlueButton = new System.Windows.Forms.Button();
+            this.panelClock = new System.Windows.Forms.Panel();
+            this.ChangeClock = new System.Windows.Forms.Button();
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // jeden
             // 
-            this.jeden.Location = new System.Drawing.Point(186, 300);
+            this.jeden.Location = new System.Drawing.Point(144, 213);
             this.jeden.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.jeden.Name = "jeden";
             this.jeden.Size = new System.Drawing.Size(84, 29);
@@ -87,7 +89,7 @@
             // 
             // dwa
             // 
-            this.dwa.Location = new System.Drawing.Point(308, 300);
+            this.dwa.Location = new System.Drawing.Point(234, 213);
             this.dwa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dwa.Name = "dwa";
             this.dwa.Size = new System.Drawing.Size(84, 29);
@@ -99,7 +101,7 @@
             // 
             // trzy
             // 
-            this.trzy.Location = new System.Drawing.Point(432, 300);
+            this.trzy.Location = new System.Drawing.Point(324, 213);
             this.trzy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.trzy.Name = "trzy";
             this.trzy.Size = new System.Drawing.Size(84, 29);
@@ -111,7 +113,7 @@
             // 
             // cztery
             // 
-            this.cztery.Location = new System.Drawing.Point(186, 246);
+            this.cztery.Location = new System.Drawing.Point(144, 176);
             this.cztery.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cztery.Name = "cztery";
             this.cztery.Size = new System.Drawing.Size(84, 29);
@@ -123,7 +125,7 @@
             // 
             // piec
             // 
-            this.piec.Location = new System.Drawing.Point(308, 246);
+            this.piec.Location = new System.Drawing.Point(234, 176);
             this.piec.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.piec.Name = "piec";
             this.piec.Size = new System.Drawing.Size(84, 29);
@@ -135,7 +137,7 @@
             // 
             // szesc
             // 
-            this.szesc.Location = new System.Drawing.Point(432, 246);
+            this.szesc.Location = new System.Drawing.Point(324, 176);
             this.szesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.szesc.Name = "szesc";
             this.szesc.Size = new System.Drawing.Size(84, 29);
@@ -147,7 +149,7 @@
             // 
             // siedem
             // 
-            this.siedem.Location = new System.Drawing.Point(186, 178);
+            this.siedem.Location = new System.Drawing.Point(144, 136);
             this.siedem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.siedem.Name = "siedem";
             this.siedem.Size = new System.Drawing.Size(84, 29);
@@ -159,7 +161,7 @@
             // 
             // osiem
             // 
-            this.osiem.Location = new System.Drawing.Point(308, 178);
+            this.osiem.Location = new System.Drawing.Point(234, 136);
             this.osiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.osiem.Name = "osiem";
             this.osiem.Size = new System.Drawing.Size(84, 29);
@@ -171,7 +173,7 @@
             // 
             // dziewiec
             // 
-            this.dziewiec.Location = new System.Drawing.Point(432, 178);
+            this.dziewiec.Location = new System.Drawing.Point(324, 136);
             this.dziewiec.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dziewiec.Name = "dziewiec";
             this.dziewiec.Size = new System.Drawing.Size(84, 29);
@@ -183,7 +185,7 @@
             // 
             // zero
             // 
-            this.zero.Location = new System.Drawing.Point(308, 371);
+            this.zero.Location = new System.Drawing.Point(234, 250);
             this.zero.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(84, 29);
@@ -196,7 +198,7 @@
             // przecinek
             // 
             this.przecinek.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.przecinek.Location = new System.Drawing.Point(186, 371);
+            this.przecinek.Location = new System.Drawing.Point(144, 250);
             this.przecinek.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.przecinek.Name = "przecinek";
             this.przecinek.Size = new System.Drawing.Size(84, 29);
@@ -210,7 +212,7 @@
             // 
             // rownaSie
             // 
-            this.rownaSie.Location = new System.Drawing.Point(432, 371);
+            this.rownaSie.Location = new System.Drawing.Point(324, 250);
             this.rownaSie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rownaSie.Name = "rownaSie";
             this.rownaSie.Size = new System.Drawing.Size(84, 29);
@@ -222,7 +224,7 @@
             // 
             // dodawanie
             // 
-            this.dodawanie.Location = new System.Drawing.Point(585, 176);
+            this.dodawanie.Location = new System.Drawing.Point(414, 136);
             this.dodawanie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dodawanie.Name = "dodawanie";
             this.dodawanie.Size = new System.Drawing.Size(84, 29);
@@ -234,7 +236,7 @@
             // 
             // odejmowanie
             // 
-            this.odejmowanie.Location = new System.Drawing.Point(585, 245);
+            this.odejmowanie.Location = new System.Drawing.Point(414, 176);
             this.odejmowanie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.odejmowanie.Name = "odejmowanie";
             this.odejmowanie.Size = new System.Drawing.Size(84, 29);
@@ -246,7 +248,7 @@
             // 
             // mnozenie
             // 
-            this.mnozenie.Location = new System.Drawing.Point(585, 300);
+            this.mnozenie.Location = new System.Drawing.Point(414, 213);
             this.mnozenie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mnozenie.Name = "mnozenie";
             this.mnozenie.Size = new System.Drawing.Size(84, 29);
@@ -258,7 +260,7 @@
             // 
             // dzielenie
             // 
-            this.dzielenie.Location = new System.Drawing.Point(585, 371);
+            this.dzielenie.Location = new System.Drawing.Point(414, 250);
             this.dzielenie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dzielenie.Name = "dzielenie";
             this.dzielenie.Size = new System.Drawing.Size(84, 29);
@@ -270,7 +272,7 @@
             // 
             // czyszczenieWszystko
             // 
-            this.czyszczenieWszystko.Location = new System.Drawing.Point(736, 176);
+            this.czyszczenieWszystko.Location = new System.Drawing.Point(504, 136);
             this.czyszczenieWszystko.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.czyszczenieWszystko.Name = "czyszczenieWszystko";
             this.czyszczenieWszystko.Size = new System.Drawing.Size(84, 29);
@@ -297,7 +299,7 @@
             this.toolStripDropDownButton1.Image = global::Kalkulator_i_Zegar.Properties.Resources.doge;
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(77, 33);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(77, 29);
             this.toolStripDropDownButton1.Text = "Plik";
             // 
             // wczytajTłoDomyślneToolStripMenuItem
@@ -332,10 +334,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(142, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(123, 13);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(771, 550);
+            this.pictureBox1.Size = new System.Drawing.Size(780, 573);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
@@ -358,7 +360,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Image = global::Kalkulator_i_Zegar.Properties.Resources.doge;
-            this.label2.Location = new System.Drawing.Point(676, 50);
+            this.label2.Location = new System.Drawing.Point(687, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 102);
             this.label2.TabIndex = 21;
@@ -369,11 +371,11 @@
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(186, 50);
+            this.textBox1.Location = new System.Drawing.Point(144, 38);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(483, 71);
+            this.textBox1.Size = new System.Drawing.Size(444, 71);
             this.textBox1.TabIndex = 22;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -381,21 +383,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Miriam Mono CLM", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label4.Location = new System.Drawing.Point(741, 485);
+            this.label4.Font = new System.Drawing.Font("Miriam Mono CLM", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label4.Location = new System.Drawing.Point(598, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 34);
+            this.label4.Size = new System.Drawing.Size(255, 53);
             this.label4.TabIndex = 24;
             this.label4.Text = "00:00:00";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // StyleButton1
             // 
-            this.StyleButton1.Font = new System.Drawing.Font("NSimSun", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StyleButton1.Font = new System.Drawing.Font("NSimSun", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StyleButton1.Location = new System.Drawing.Point(547, 551);
             this.StyleButton1.Name = "StyleButton1";
             this.StyleButton1.Size = new System.Drawing.Size(80, 36);
@@ -406,7 +409,7 @@
             // 
             // StyleButton2
             // 
-            this.StyleButton2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StyleButton2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StyleButton2.Location = new System.Drawing.Point(628, 549);
             this.StyleButton2.Name = "StyleButton2";
             this.StyleButton2.Size = new System.Drawing.Size(75, 36);
@@ -417,7 +420,7 @@
             // 
             // StyleButton3
             // 
-            this.StyleButton3.Font = new System.Drawing.Font("Miriam Mono CLM", 7.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.StyleButton3.Font = new System.Drawing.Font("Miriam Mono CLM", 6.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.StyleButton3.Location = new System.Drawing.Point(709, 550);
             this.StyleButton3.Name = "StyleButton3";
             this.StyleButton3.Size = new System.Drawing.Size(80, 36);
@@ -449,25 +452,49 @@
             // BlueButton
             // 
             this.BlueButton.BackColor = System.Drawing.Color.Navy;
-            this.BlueButton.Location = new System.Drawing.Point(834, 554);
+            this.BlueButton.Location = new System.Drawing.Point(836, 554);
             this.BlueButton.Name = "BlueButton";
             this.BlueButton.Size = new System.Drawing.Size(33, 33);
             this.BlueButton.TabIndex = 27;
             this.BlueButton.UseVisualStyleBackColor = false;
             this.BlueButton.Click += new System.EventHandler(this.PinkButton_Click);
             // 
+            // panelClock
+            // 
+            this.panelClock.BackColor = System.Drawing.Color.Transparent;
+            this.panelClock.Location = new System.Drawing.Point(567, 232);
+            this.panelClock.Name = "panelClock";
+            this.panelClock.Size = new System.Drawing.Size(314, 274);
+            this.panelClock.TabIndex = 32;
+            this.panelClock.VisibleChanged += new System.EventHandler(this.ChangeClock_Click);
+            this.panelClock.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelClock_Paint);
+            // 
+            // ChangeClock
+            // 
+            this.ChangeClock.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ChangeClock.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChangeClock.Location = new System.Drawing.Point(414, 511);
+            this.ChangeClock.Name = "ChangeClock";
+            this.ChangeClock.Size = new System.Drawing.Size(117, 74);
+            this.ChangeClock.TabIndex = 0;
+            this.ChangeClock.Text = "Zmień zegar";
+            this.ChangeClock.UseVisualStyleBackColor = false;
+            this.ChangeClock.Click += new System.EventHandler(this.ChangeClock_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 602);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.ChangeClock);
+            this.Controls.Add(this.panelClock);
             this.Controls.Add(this.BlackButton);
             this.Controls.Add(this.StyleButton3);
             this.Controls.Add(this.StyleButton2);
             this.Controls.Add(this.StyleButton1);
             this.Controls.Add(this.BlueButton);
             this.Controls.Add(this.GreenButton);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -540,6 +567,8 @@
         private System.Windows.Forms.Button BlackButton;
         private System.Windows.Forms.Button GreenButton;
         private System.Windows.Forms.Button BlueButton;
+        private System.Windows.Forms.Panel panelClock;
+        private System.Windows.Forms.Button ChangeClock;
     }
 }
 
