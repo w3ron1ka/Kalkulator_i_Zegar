@@ -15,11 +15,14 @@ namespace Kalkulator_i_Zegar
         public Form1()
         {
             InitializeComponent();
+            GreenButton.FlatStyle= FlatStyle.Flat;
+            BlueButton.FlatStyle = FlatStyle.Flat;
+            BlackButton.FlatStyle = FlatStyle.Flat;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            timer1.Start();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -263,6 +266,47 @@ namespace Kalkulator_i_Zegar
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label4.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void BlueButton_Click(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.DarkGreen;
+        }
+
+        private void PinkButton_Click(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.Navy;
+
+        }
+
+        private void StyleButton2_Click(object sender, EventArgs e)
+        {
+            label4.Font = new Font("Microsoft Yi Baiti",17, FontStyle.Bold );
+        }
+
+        private void StyleButton1_Click(object sender, EventArgs e)
+        {
+            label4.Font = new Font("NSimSun", 15, FontStyle.Bold);
+        }
+
+        private void StyleButton3_Click(object sender, EventArgs e)
+        {
+            label4.Font = new Font("Miriam Mono CLM", 15, FontStyle.Bold);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.Black;
         }
     }
 }
