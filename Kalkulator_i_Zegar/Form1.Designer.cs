@@ -71,6 +71,7 @@
             this.BlueButton = new System.Windows.Forms.Button();
             this.panelClock = new System.Windows.Forms.Panel();
             this.ChangeClock = new System.Windows.Forms.Button();
+
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -279,6 +280,7 @@
             this.czyszczenieWszystko.TabIndex = 16;
             this.czyszczenieWszystko.Text = "C";
             this.czyszczenieWszystko.UseVisualStyleBackColor = true;
+            this.czyszczenieWszystko.Click += new System.EventHandler(this.czyszczenieWszystko_Click);
             // 
             // toolStrip2
             // 
@@ -569,6 +571,7 @@
         private System.Windows.Forms.Button BlueButton;
         private System.Windows.Forms.Panel panelClock;
         private System.Windows.Forms.Button ChangeClock;
+
     }
 }
 

@@ -132,6 +132,12 @@ namespace Kalkulator_i_Zegar
                 case ',' :
                     this.przecinek.PerformClick();
                     break;
+                case 'c':
+                    this.czyszczenieWszystko.PerformClick();
+                    break;
+                case 'C':
+                    this.czyszczenieWszystko.PerformClick();
+                    break;
             }
         }
 
@@ -267,10 +273,15 @@ namespace Kalkulator_i_Zegar
             this.label2.Text = ":";
             dzialanie = ':';
         }
+        private void czyszczenieWszystko_Click(object sender, EventArgs e)
+        {
+            this.textBox1.Text = "";
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
         }
+
 
         private void Label4_Click(object sender, EventArgs e)
         {
@@ -384,6 +395,7 @@ namespace Kalkulator_i_Zegar
                 isAnalogClock = true; // Zmieniamy stan na analogowy
             }
         }
+
 
 
     }
