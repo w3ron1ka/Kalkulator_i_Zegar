@@ -15,11 +15,18 @@ namespace Kalkulator_i_Zegar
         public Form1()
         {
             InitializeComponent();
+            GreenButton.FlatStyle= FlatStyle.Flat;
+            BlueButton.FlatStyle = FlatStyle.Flat;
+            BlackButton.FlatStyle = FlatStyle.Flat;
         }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
+            timer1.Start();
+         
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -275,8 +282,86 @@ namespace Kalkulator_i_Zegar
 
         }
 
-        
+        private void Label4_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label4.Text = DateTime.Now.ToString("HH:mm:ss");
+            panelClock.Invalidate(); // Wywołanie odświeżenia Panelu zegara
+ 
+        }
+        //zmiana kolorów zegara cyfrowego
+        private void BlueButton_Click(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.DarkGreen;
+
+        }
+
+        private void PinkButton_Click(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.Navy;
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.Black;
+        }
+       //zmiana fontu zegara cyfrowego
+
+        private void StyleButton1_Click(object sender, EventArgs e)
+        {
+            label4.Font = new Font("NSimSun", 24, FontStyle.Bold);
+        }
+ private void StyleButton2_Click(object sender, EventArgs e)
+        {
+            label4.Font = new Font("Microsoft Yi Baiti",26, FontStyle.Bold );
+        }
+        private void StyleButton3_Click(object sender, EventArgs e)
+        {
+            label4.Font = new Font("Miriam Mono CLM", 24, FontStyle.Bold);
+        }
+
+        //zegar analogowy
+
+        private void PanelClock_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias; //wygładzenie tarczy zegara
+
+            int centerX = panelClock.Width / 2;
+            int centerY = panelClock.Height / 2;
+            int radius = Math.Min(panelClock.Width, panelClock.Height) / 2 - 10;
+
+            // Tarcza zegara
+            g.DrawEllipse(Pens.Brown, centerX - radius, centerY - radius, radius * 2, radius * 2);
+
+            // Cyfry na tarczy
+            for (int i = 1; i <= 12; i++)
+            {
+                double angle = Math.PI / 6 * i; // Kąt w radianach dla każdej cyfry
+                int x = centerX + (int)(Math.Sin(angle) * (radius - 20));
+                int y = centerY - (int)(Math.Cos(angle) * (radius - 20));
+                g.DrawString(i.ToString(), new Font("Miriam Mono CLM", 15), Brushes.Black, x - 10, y - 10);
+            }
+
+            // Pobieranie bieżącego czasu
+      
+            DateTime now = DateTime.Now;
+            int hour = now.Hour % 12;
+            int minute = now.Minute;
+            int second = now.Second;
+
+            // Wskazówka godzinowa
+            DrawHand(g, centerX, centerY, radius * 0.5, (hour + minute / 60.0) * 30, Brushes.Black, 4);
+
+            // Wskazówka minutowa
+            DrawHand(g, centerX, centerY, radius * 0.7, (minute + second / 60.0) * 6, Brushes.Black, 2);
+
+            // Wskazówka sekundowa
+            DrawHand(g, centerX, centerY, radius * 0.9, second * 6, Brushes.Red, 1);
+        }
     }
 }
