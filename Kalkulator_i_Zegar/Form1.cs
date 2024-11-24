@@ -15,9 +15,7 @@ namespace Kalkulator_i_Zegar
         public Form1()
         {
             InitializeComponent();
-            GreenButton.FlatStyle= FlatStyle.Flat;
-            BlueButton.FlatStyle = FlatStyle.Flat;
-            BlackButton.FlatStyle = FlatStyle.Flat;
+
         }
 
 
@@ -294,35 +292,55 @@ namespace Kalkulator_i_Zegar
  
         }
         //zmiana kolorów zegara cyfrowego
-        private void BlueButton_Click(object sender, EventArgs e)
+         
+        private void zielonyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             label4.ForeColor = Color.DarkGreen;
-
-        }
-
-        private void PinkButton_Click(object sender, EventArgs e)
+            clockNumberColor = Brushes.DarkGreen; // Zmieniamy kolor cyfr na analogowym
+            panelClock.Invalidate(); // Przeładowanie zegara analogowego
+        }        
+        private void niebieskiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            label4.ForeColor = Color.Navy;
-
-        }
-        private void button1_Click(object sender, EventArgs e)
+            label4.ForeColor = Color.RoyalBlue;
+            clockNumberColor = Brushes.RoyalBlue; // Zmieniamy kolor cyfr na analogowym
+            panelClock.Invalidate(); // Przeładowanie zegara analogowego
+        }       
+        private void domyślnyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             label4.ForeColor = Color.Black;
+            clockNumberColor = Brushes.Black; // Zmieniamy kolor cyfr na analogowym
+            panelClock.Invalidate(); // Przeładowanie zegara analogowego
         }
-       //zmiana fontu zegara cyfrowego
 
-        private void StyleButton1_Click(object sender, EventArgs e)
+       
+       //zmiana fontu zegara cyfrowego
+        private void styl1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             label4.Font = new Font("NSimSun", 24, FontStyle.Bold);
-        }
- private void StyleButton2_Click(object sender, EventArgs e)
+            clockNumberFont = new Font("NSimSun", 15, FontStyle.Bold); // Zmieniamy czcionkę cyfr na analogowym
+            panelClock.Invalidate(); // Przeładowanie zegara analogowego
+        }       
+        private void styl2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            label4.Font = new Font("Microsoft Yi Baiti",26, FontStyle.Bold );
-        }
-        private void StyleButton3_Click(object sender, EventArgs e)
+            label4.Font = new Font("Microsoft Yi Baiti", 26, FontStyle.Bold);
+            clockNumberFont = new Font("Microsoft Yi Baiti", 15, FontStyle.Bold); // Zmieniamy czcionkę cyfr na analogowym
+            panelClock.Invalidate(); // Przeładowanie zegara analogowego
+        }     
+        private void styl3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             label4.Font = new Font("Miriam Mono CLM", 24, FontStyle.Bold);
+            clockNumberFont = new Font("Miriam Mono CLM", 15, FontStyle.Bold); // Zmieniamy czcionkę cyfr na analogowym
+            panelClock.Invalidate(); // Przeładowanie zegara analogowego
+
         }
+
+        // Zmienna do przechowywania koloru cyfr
+        private Brush clockNumberColor = Brushes.Black; // Początkowy kolor cyfr
+
+        // Zmienna do przechowywania czcionki
+        private Font clockNumberFont = new Font("Miriam Mono CLM", 15); // Początkowa czcionka
+
+
 
         //zegar analogowy
 
@@ -336,7 +354,7 @@ namespace Kalkulator_i_Zegar
             int radius = Math.Min(panelClock.Width, panelClock.Height) / 2 - 10;
 
             // Tarcza zegara
-            g.DrawEllipse(Pens.Brown, centerX - radius, centerY - radius, radius * 2, radius * 2);
+            g.DrawEllipse(Pens.Black, centerX - radius, centerY - radius, radius * 2, radius * 2);
 
             // Cyfry na tarczy
             for (int i = 1; i <= 12; i++)
@@ -344,8 +362,10 @@ namespace Kalkulator_i_Zegar
                 double angle = Math.PI / 6 * i; // Kąt w radianach dla każdej cyfry
                 int x = centerX + (int)(Math.Sin(angle) * (radius - 20));
                 int y = centerY - (int)(Math.Cos(angle) * (radius - 20));
-                g.DrawString(i.ToString(), new Font("Miriam Mono CLM", 15), Brushes.Black, x - 10, y - 10);
+             //   g.DrawString(i.ToString(), new Font("Miriam Mono CLM", 15), Brushes.Black, x - 10, y - 10);
+                g.DrawString(i.ToString(), clockNumberFont, clockNumberColor, x - 10, y - 10); // Zmieniamy czcionkę i kolor
             }
+
 
             // Pobieranie bieżącego czasu
       
@@ -372,8 +392,9 @@ namespace Kalkulator_i_Zegar
             Pen pen = new Pen(color, width) { EndCap = System.Drawing.Drawing2D.LineCap.Round };
             g.DrawLine(pen, centerX, centerY, x, y);
         }
-        private bool isAnalogClock = true;
-        private void ChangeClock_Click(object sender, EventArgs e)
+      private bool isAnalogClock = true;
+
+        private void zmieńZegarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Sprawdzamy, który zegar jest aktualnie widoczny
             if (isAnalogClock)
@@ -391,5 +412,7 @@ namespace Kalkulator_i_Zegar
                 isAnalogClock = true; // Zmieniamy stan na analogowy
             }
         }
+
+
     }
 }
