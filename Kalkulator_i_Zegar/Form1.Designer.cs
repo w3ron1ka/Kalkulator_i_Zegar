@@ -32,6 +32,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.jeden = new System.Windows.Forms.Button();
             this.dwa = new System.Windows.Forms.Button();
             this.trzy = new System.Windows.Forms.Button();
@@ -60,6 +61,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -251,6 +253,7 @@
             this.czyszczenieWszystko.TabIndex = 16;
             this.czyszczenieWszystko.Text = "C";
             this.czyszczenieWszystko.UseVisualStyleBackColor = true;
+            this.czyszczenieWszystko.Click += new System.EventHandler(this.czyszczenieWszystko_Click);
             // 
             // toolStrip2
             // 
@@ -259,7 +262,7 @@
             this.toolStripDropDownButton1});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(824, 31);
+            this.toolStrip2.Size = new System.Drawing.Size(871, 31);
             this.toolStrip2.TabIndex = 18;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -350,11 +353,15 @@
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 482);
+            this.ClientSize = new System.Drawing.Size(871, 564);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -418,6 +425,7 @@
         private System.Windows.Forms.ToolStripMenuItem twojeTłoToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
