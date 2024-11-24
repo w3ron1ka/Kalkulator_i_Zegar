@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+using System.IO;
+using System.Runtime.Versioning;
+using System.Reflection;
 
 namespace Kalkulator_i_Zegar
 {
@@ -74,8 +78,8 @@ namespace Kalkulator_i_Zegar
 
         private void tłoDomyślneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.pictureBox1.Load("Resources\\simsala.jpg");
-            this.label1.Text = ("Simsala Grimm");
+            this.pictureBox1.Load("Resources\\calculation-cat.gif");
+            this.label1.Text = ("Kot");
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
@@ -139,9 +143,11 @@ namespace Kalkulator_i_Zegar
             }
         }
 
+
         private void jeden_Click(object sender, EventArgs e)
         {
             this.textBox1.Text = (textBox1.Text + "1");
+            
         }
 
         private void dwa_Click(object sender, EventArgs e)
@@ -216,6 +222,13 @@ namespace Kalkulator_i_Zegar
                 case ':':
                     if (liczba2 == 0)
                     {
+                        // Załaduje plik sadMiau osadzony w zasobach
+                        using (Stream sadMiau = Assembly.GetExecutingAssembly().GetManifestResourceStream("Kalkulator_i_Zegar.Resources.sadMiau.wav"))
+                        {
+                            SoundPlayer player = new SoundPlayer(sadMiau);
+                            player.Play();
+                        }
+
                         MessageBox.Show("Pamietaj kolego nie dziel przez zero!");       // nie uzywamy wyjatku bo dla wyniku ktory jest zmienna double nie ma wyjatku - wychodzi nieskonczonosc, dlatego reczne sprawdzenie
                     }
                     else
@@ -274,6 +287,7 @@ namespace Kalkulator_i_Zegar
         private void czyszczenieWszystko_Click(object sender, EventArgs e)
         {
             this.textBox1.Text = "";
+
         }
         private void label2_Click(object sender, EventArgs e)
         {
@@ -414,5 +428,36 @@ namespace Kalkulator_i_Zegar
         }
 
 
+        // zmiana kolorow tla z dzwiekiem kota
+        private void kolor_tla1_Click(object sender, EventArgs e)
+        {
+            using (Stream miau = Assembly.GetExecutingAssembly().GetManifestResourceStream("Kalkulator_i_Zegar.Resources.miau.wav"))
+            {
+                SoundPlayer player = new SoundPlayer(miau);
+                player.Play();
+            }
+            this.BackColor = Color.CadetBlue;
+            this.toolStrip2.BackColor = Color.CadetBlue;
+        }
+        private void kolor_tla2_Click(object sender, EventArgs e)
+        {
+            using (Stream miau = Assembly.GetExecutingAssembly().GetManifestResourceStream("Kalkulator_i_Zegar.Resources.miau.wav"))
+            {
+                SoundPlayer player = new SoundPlayer(miau);
+                player.Play();
+            }
+            this.BackColor = Color.LavenderBlush;
+            this.toolStrip2.BackColor = Color.LavenderBlush;
+        }
+        private void kolor_tla3_Click(object sender, EventArgs e)
+        {
+            using (Stream miau = Assembly.GetExecutingAssembly().GetManifestResourceStream("Kalkulator_i_Zegar.Resources.miau.wav"))
+            {
+                SoundPlayer player = new SoundPlayer(miau);
+                player.Play();
+            }
+            this.BackColor = Color.WhiteSmoke;
+            this.toolStrip2.BackColor = Color.WhiteSmoke;
+        }
     }
 }

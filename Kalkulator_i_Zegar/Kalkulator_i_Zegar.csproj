@@ -84,9 +84,15 @@
     <None Include="Resources\doge.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\simsala.jpg">
+    <EmbeddedResource Include="Resources\sadMiau.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\miau.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\calculation-cat.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
