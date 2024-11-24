@@ -1,4 +1,6 @@
-﻿namespace Kalkulator_i_Zegar
+﻿using System;
+
+namespace Kalkulator_i_Zegar
 {
     partial class Form1
     {
