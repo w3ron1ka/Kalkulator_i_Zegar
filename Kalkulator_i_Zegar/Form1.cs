@@ -278,17 +278,17 @@ namespace Kalkulator_i_Zegar
         }
 
         // zegar usun
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            //zegar.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
+        //private void timer1_Tick(object sender, EventArgs e)
+        //{
+        //    //zegar.Text = DateTime.Now.ToString("HH:mm:ss");
+        //}
 
-        private void zegar_Click(object sender, EventArgs e)
-        {
-            //timer1 = new Timer();
+        //private void zegar_Click(object sender, EventArgs e)
+        //{
+        //    //timer1 = new Timer();
 
-            //timer1.Start();
-            //zegar.Text = DateTime.Now.ToString("HH:mm:ss");
-        }
+        //    //timer1.Start();
+        //    //zegar.Text = DateTime.Now.ToString("HH:mm:ss");
+        //}
     }
 }
