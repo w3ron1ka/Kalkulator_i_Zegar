@@ -282,7 +282,6 @@ namespace Kalkulator_i_Zegar
 
         }
 
-
         private void Label4_Click(object sender, EventArgs e)
         {
 
@@ -364,39 +363,5 @@ namespace Kalkulator_i_Zegar
             // Wskazówka sekundowa
             DrawHand(g, centerX, centerY, radius * 0.9, second * 6, Brushes.Red, 1);
         }
-        private void DrawHand(Graphics g, int centerX, int centerY, double length, double angle, Brush color, int width)
-        {
-            angle = Math.PI / 180 * angle - Math.PI / 2;
-            int x = centerX + (int)(Math.Cos(angle) * length);
-            int y = centerY + (int)(Math.Sin(angle) * length);
-
-            Pen pen = new Pen(color, width) { EndCap = System.Drawing.Drawing2D.LineCap.Round };
-            g.DrawLine(pen, centerX, centerY, x, y);
-        }
-
-        private bool isAnalogClock = true;
-
-
-        private void ChangeClock_Click(object sender, EventArgs e)
-        {
-            // Sprawdzamy, który zegar jest aktualnie widoczny
-            if (isAnalogClock)
-            {
-                // Jeśli zegar analogowy jest widoczny, przełącz na cyfrowy
-                panelClock.Visible = false; // Ukrywamy zegar analogowy
-                label4.Visible = true; // Pokazujemy zegar cyfrowy
-                isAnalogClock = false; // Zmieniamy stan na cyfrowy
-            }
-            else
-            {
-                // Jeśli zegar cyfrowy jest widoczny, przełącz na analogowy
-                panelClock.Visible = true; // Pokazujemy zegar analogowy
-                label4.Visible = false; // Ukrywamy zegar cyfrowy
-                isAnalogClock = true; // Zmieniamy stan na analogowy
-            }
-        }
-
-
-
     }
 }
